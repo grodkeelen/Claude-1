@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Authentic Invite Letter</title>
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+  @page { size: letter; margin: 0; }
+  :root {
+    --ink: #1c1a17;
+    --muted: #5b564d;
+    --gold: #c98f1c;
+    --ember: #e5573d;
+    --berry: #a6395b;
+    --forest: #4f8f44;
+    --paper: #ffffff;
+    --cream: #f6f2e9;
+  }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); }
+  .page {
+    width: 8.5in; height: 11in; box-sizing: border-box;
+    padding: 0.55in 0.75in 0.5in; position: relative; overflow: hidden;
+    display: flex; flex-direction: column;
+    font-family: 'Source Serif 4', Georgia, serif; font-size: 11pt; line-height: 1.5;
+  }
+  .stripe { position: absolute; left: 0; right: 0; top: 0; height: 8px;
+    background: linear-gradient(90deg, var(--gold) 0 25%, var(--ember) 25% 50%, var(--berry) 50% 75%, var(--forest) 75% 100%); }
+
+  header { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 14px; border-bottom: 1.5px solid var(--ink); }
+  .mark { position: relative; display: inline-block; }
+  .mark .word { font-family: 'Anton'; font-size: 54px; line-height: 0.9; letter-spacing: 1px; transform: skewX(-9deg); display: block; }
+  .mark .crown { position: absolute; left: 2px; top: -19px; transform: rotate(-17deg); }
+  .mark .sub { font-family: 'Oswald'; font-weight: 600; font-size: 17px; letter-spacing: 5px; margin-top: 4px; }
+  .church { text-align: right; font-family: 'Oswald'; font-size: 10pt; line-height: 1.4; color: var(--muted); letter-spacing: 0.3px; }
+  .church strong { display: block; color: var(--ink); font-weight: 600; font-size: 11pt; letter-spacing: 2px; text-transform: uppercase; }
+
+  .theme { font-family: 'Oswald'; font-weight: 500; font-size: 12pt; color: var(--berry); letter-spacing: 0.5px; margin: 10px 0 18px; }
+
+  p { margin: 0 0 11px; }
+  .salutation { margin-bottom: 12px; }
+
+  .details { display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: var(--cream); border-left: 4px solid var(--gold); margin: 6px 0 16px; }
+  .details div { padding: 9px 16px; }
+  .details div:nth-child(-n+2) { border-bottom: 1px solid #e3dccd; }
+  .details div:nth-child(2n+1) { border-right: 1px solid #e3dccd; }
+  .label { font-family: 'Oswald'; font-weight: 600; font-size: 8.5pt; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); display: block; }
+  .val { font-family: 'Oswald'; font-weight: 500; font-size: 11.5pt; line-height: 1.35; letter-spacing: 0.2px; }
+  .val small { font-weight: 400; font-size: 10pt; color: var(--muted); }
+
+  .sign { margin-top: auto; display: flex; align-items: center; gap: 20px; padding-top: 14px; border-top: 1.5px solid var(--ink); }
+  .sign .photo { width: 92px; height: 92px; border-radius: 50%; background: url(assets/greg-keelen.jpg) 50% 38% / 230% auto no-repeat; border: 3px solid var(--gold); flex: none; }
+  .sign .closing { font-style: italic; margin-bottom: 2px; }
+  .sign .name { font-family: 'Oswald'; font-weight: 700; font-size: 17pt; line-height: 1.1; letter-spacing: 0.3px; }
+  .sign .role { font-family: 'Oswald'; font-size: 10.5pt; color: var(--muted); letter-spacing: 0.3px; }
+  .sign .cta { margin-left: auto; text-align: right; font-family: 'Oswald'; }
+  .sign .cta .label { color: var(--berry); }
+  .sign .cta .url { font-weight: 600; font-size: 16pt; letter-spacing: 1px; text-transform: uppercase; }
+  .sign .cta .mail { font-size: 10.5pt; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="stripe"></div>
+
+  <header>
+    <div class="mark">
+      <svg class="crown" width="46" height="35" viewBox="0 0 130 100" fill="none"><path d="M12 82 L12 40 L38 62 L54 22 L70 54 L86 20 L102 60 L118 40 L118 82 Z" stroke="#c98f1c" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/><path d="M34 58 L34 78 M52 50 L52 78 M70 56 L70 78 M88 50 L88 78 M104 58 L104 78" stroke="#c98f1c" stroke-width="6" stroke-linecap="round"/></svg>
+      <span class="word">AUTHENTIC</span>
+      <div class="sub">YOUTH CONFERENCE</div>
+    </div>
+    <div class="church">
+      <strong>Vision Baptist Church</strong>
+      355 Windy Hill Drive<br>
+      Alpharetta, GA 30004
+    </div>
+  </header>
+
+  <div class="theme">Authentic Discipleship in a Counterfeit World</div>
+
+  <p class="salutation">Dear Youth Pastor or Leader,</p>
+
+  <p>I'd like to invite you and your students to the Authentic Youth Conference, hosted by Vision Baptist Church on Saturday, March 20, 2027.</p>
+
+  <p>Our students are growing up in a world full of filters and facades. Much of what they see every day is edited to look better than it really is, and it's easy for their faith to start working the same way. Authentic is a one-day conference built to challenge them to live out a real, Christ-centered faith.</p>
+
+  <p>We've planned the day around clear, engaging Bible teaching, meaningful worship, and intentional fellowship, all aimed at encouraging students to follow Jesus for real. Pastor Rick Finley will bring the keynote messages, and Dr. Mike Lester will join us as our guest speaker. Both men love teenagers and preach God's Word with clarity and conviction.</p>
+
+  <p>We also want your students to have a great time. The day includes great food, fun games, exciting giveaways, and a full coffee bar. The conference is open to all middle and high school students, so bring your whole group.</p>
+
+  <div class="details">
+    <div><span class="label">When</span><span class="val">Saturday, March 20, 2027<br><small>10:00 AM – 2:00 PM</small></span></div>
+    <div><span class="label">Where</span><span class="val">Vision Baptist Church<br><small>355 Windy Hill Drive, Alpharetta, GA 30004</small></span></div>
+    <div><span class="label">Speakers</span><span class="val">Pastor Rick Finley<br><small>Fellowship Baptist Church, Durham, NC</small><br>Dr. Mike Lester<br><small>President, Veritas Baptist College</small></span></div>
+    <div><span class="label">Who</span><span class="val">Middle &amp; high school students<br><small>and their youth leaders</small></span></div>
+  </div>
+
+  <p>If you plan to bring a group, you can find details and sign up at visionbaptist.com. Please reach out if you have questions or if there's any way I can help. We're praying for your students and are excited about what God will do in their lives that day.</p>
+
+  <div class="sign">
+    <div class="photo" role="img" aria-label="Pastor Greg Keelen"></div>
+    <div>
+      <div class="closing">In Christ,</div>
+      <div class="name">Pastor Greg Keelen</div>
+      <div class="role">Family Ministries Pastor, Vision Baptist Church</div>
+    </div>
+    <div class="cta">
+      <span class="label">Details &amp; sign up</span>
+      <div class="url">visionbaptist.com</div>
+      <div class="mail">Greg@Visionbaptist.com</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
